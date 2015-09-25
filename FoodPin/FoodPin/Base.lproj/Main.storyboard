@@ -21,14 +21,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="caA-4f-LpH">
-                                            <rect key="frame" x="14" y="10" width="584" height="60"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="McB-Dc-cjR">
+                                            <rect key="frame" x="14" y="10" width="578" height="60"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EIF-CO-xrl">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DbP-ZU-zjl">
                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="60" id="1iw-j9-VOc"/>
-                                                        <constraint firstAttribute="height" constant="60" id="c6z-Xq-Pii"/>
+                                                        <constraint firstAttribute="height" constant="60" id="Aae-Kb-iSB"/>
+                                                        <constraint firstAttribute="width" constant="60" id="K9N-E5-6iN"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -36,23 +36,23 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Mht-RP-yXN">
-                                                    <rect key="frame" x="70" y="0.0" width="514" height="55"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="fDc-6H-qBz">
+                                                    <rect key="frame" x="70" y="0.0" width="508" height="53"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wA3-se-7zv">
-                                                            <rect key="frame" x="0.0" y="0.0" width="514" height="20"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BH-zQ-hVh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="20"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwG-iN-cDG">
-                                                            <rect key="frame" x="0.0" y="21" width="514" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jI0-eo-JGc">
+                                                            <rect key="frame" x="0.0" y="20" width="55" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9W-v3-i43">
-                                                            <rect key="frame" x="0.0" y="39" width="514" height="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4D-xm-cAE">
+                                                            <rect key="frame" x="0.0" y="37" width="30" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
@@ -63,17 +63,17 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="caA-4f-LpH" secondAttribute="bottom" constant="1.5" id="0bj-0V-CWp"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="caA-4f-LpH" secondAttribute="trailing" id="Esd-l3-51j"/>
-                                        <constraint firstItem="caA-4f-LpH" firstAttribute="top" secondItem="3ri-52-07D" secondAttribute="topMargin" constant="2" id="O9Z-Tf-UcB"/>
-                                        <constraint firstItem="caA-4f-LpH" firstAttribute="leading" secondItem="3ri-52-07D" secondAttribute="leadingMargin" id="YcO-da-apU"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="McB-Dc-cjR" secondAttribute="bottom" constant="1.5" id="9fg-eJ-Sx7"/>
+                                        <constraint firstItem="McB-Dc-cjR" firstAttribute="top" secondItem="3ri-52-07D" secondAttribute="topMargin" constant="2" id="EaG-kB-3ZT"/>
+                                        <constraint firstItem="McB-Dc-cjR" firstAttribute="leading" secondItem="3ri-52-07D" secondAttribute="leadingMargin" constant="6" id="HkV-qV-RUb"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="McB-Dc-cjR" secondAttribute="trailing" id="ZqM-jP-nbA"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="locationLabel" destination="rwG-iN-cDG" id="SaB-J7-JQR"/>
-                                    <outlet property="nameLabel" destination="wA3-se-7zv" id="LvF-WH-Sef"/>
-                                    <outlet property="thumbnailImageView" destination="EIF-CO-xrl" id="FzZ-r1-DB6"/>
-                                    <outlet property="typeLabel" destination="V9W-v3-i43" id="oMP-Mb-SvJ"/>
+                                    <outlet property="locationLabel" destination="jI0-eo-JGc" id="jaK-kr-rOf"/>
+                                    <outlet property="nameLabel" destination="4BH-zQ-hVh" id="IRO-Vw-5gx"/>
+                                    <outlet property="thumbnailImageView" destination="DbP-ZU-zjl" id="2v3-pO-Wvj"/>
+                                    <outlet property="typeLabel" destination="Y4D-xm-cAE" id="NoB-IF-30e"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

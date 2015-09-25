@@ -18,6 +18,8 @@ class RestaurantTableViewController: UITableViewController {
     
     var restaurantTypes = ["Coffee & Tea Shop", "Cafe", "Tea House", "Austrian / Causual Drink", "French", "Bakery", "Bakery", "Chocolate", "Cafe", "American / Seafood", "American", "American", "Breakfast & Brunch", "Coffee & Tea", "Coffee & Tea", "Latin American", "Spanish", "Spanish", "Spanish", "British", "Thai"]
     
+    var restaurantIsVisited = [Bool](count: 21, repeatedValue: false)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +59,42 @@ class RestaurantTableViewController: UITableViewController {
         cell.locationLabel!.text = restaurantLocations[indexPath.row]
         cell.typeLabel.text = restaurantTypes[indexPath.row]
         
+        if restaurantIsVisited[indexPath.row]{
+            cell.accessoryType = .Checkmark
+        }else{
+            cell.accessoryType = .None
+        }
+        
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //Create an option menu as an action sheet
+        
+        let optionMenu = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .ActionSheet)
+        
+        //Add Actions to the menu
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        optionMenu.addAction(cancelAction)
+        let callActionHandler = {(action:UIAlertAction!) -> Void in
+            let alertMessage = UIAlertController(title: "Service unavailable", message: "Sorry, the call feature is not available yet. Please retry later.", preferredStyle: .Alert)
+            alertMessage.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alertMessage, animated: true, completion: nil)
+        }
+        let callAction = UIAlertAction(title: "Call " + "123-000-\(indexPath.row)", style: .Default, handler: callActionHandler)
+        optionMenu.addAction(callAction)
+        
+        
+        let isVisitedAction = UIAlertAction(title: !self.restaurantIsVisited[indexPath.row] ? "I've been here" : "I've not been here yet", style: .Default) { (action:UIAlertAction!) -> Void in
+            let cell = tableView.cellForRowAtIndexPath(indexPath)
+            self.restaurantIsVisited[indexPath.row] = (self.restaurantIsVisited[indexPath.row]) ? false : true
+            cell?.accessoryType = (self.restaurantIsVisited[indexPath.row]) ? .Checkmark : .None
+
+        }
+        optionMenu.addAction(isVisitedAction)
+        
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
 
 
@@ -69,17 +106,33 @@ class RestaurantTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        //Social Sharing Button
+        let shareAction = UITableViewRowAction(style: .Default, title: "Share") { (action, indexPath) -> Void in
+            let defaultText = "Just checking in at " + self.restaurantNames[indexPath.row]
+            if let imageToShare = UIImage(named: self.restaurantImages[indexPath.row]){
+                let activityController = UIActivityViewController(activityItems: [defaultText, imageToShare], applicationActivities: nil)
+                self.presentViewController(activityController, animated: true, completion: nil)
+            }
+        }
+        //Delete button
+        let deleteAction = UITableViewRowAction(style: .Default, title: "Delete") { (action, indexPath) -> Void in
+            //Delete the row from the data source
+            self.restaurantNames.removeAtIndex(indexPath.row)
+            self.restaurantLocations.removeAtIndex(indexPath.row)
+            self.restaurantTypes.removeAtIndex(indexPath.row)
+            self.restaurantIsVisited.removeAtIndex(indexPath.row)
+            self.restaurantImages.removeAtIndex(indexPath.row)
+            self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+        
+        shareAction.backgroundColor = UIColor(red: 28.0/255.0, green: 165.0/255.0, blue: 253.0/255.0, alpha: 1.0)
+        deleteAction.backgroundColor = UIColor(red: 202.0/255.0, green: 202.0/255.0, blue: 203.0/255.0, alpha: 1.0)
+        
+        return [deleteAction, shareAction]
     }
-    */
+
 
     /*
     // Override to support rearranging the table view.
