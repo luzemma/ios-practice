@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDD5AE3418F7684A00864648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD5AE3318F7684A00864648 /* Foundation.framework */; };
+		EDD5AE3618F7684A00864648 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD5AE3518F7684A00864648 /* CoreGraphics.framework */; };
+		EDD5AE3818F7684A00864648 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD5AE3718F7684A00864648 /* UIKit.framework */; };
+		EDD5AE3E18F7684A00864648 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDD5AE3C18F7684A00864648 /* InfoPlist.strings */; };
+		EDD5AE4018F7684A00864648 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5AE3F18F7684A00864648 /* main.m */; };
+		EDD5AE4418F7684A00864648 /* codeSchoolAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5AE4318F7684A00864648 /* codeSchoolAppDelegate.m */; };
+		EDD5AE4618F7684A00864648 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD5AE4518F7684A00864648 /* Images.xcassets */; };
+		EDD5AE4D18F7684A00864648 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD5AE4C18F7684A00864648 /* XCTest.framework */; };
+		EDD5AE4E18F7684A00864648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD5AE3318F7684A00864648 /* Foundation.framework */; };
+		EDD5AE4F18F7684A00864648 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD5AE3718F7684A00864648 /* UIKit.framework */; };
+		EDD5AE5718F7684A00864648 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDD5AE5518F7684A00864648 /* InfoPlist.strings */; };
+		EDD5AE5918F7684A00864648 /* GoogleMapCodeSchoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5AE5818F7684A00864648 /* GoogleMapCodeSchoolTests.m */; };
+		EDD5AE6518F76C2B00864648 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD5AE6418F76C2B00864648 /* GoogleMaps.framework */; };
+		EDD5AE6718F76C6C00864648 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EDD5AE6618F76C6C00864648 /* GoogleMaps.bundle */; };
+		EDD5AE6B18F76DA500864648 /* LakeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD5AE6918F76DA500864648 /* LakeMapViewController.m */; };
+		EDD5AE6C18F76DA500864648 /* LakeMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD5AE6A18F76DA500864648 /* LakeMapViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDD5AE5018F7684A00864648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDD5AE2818F7684A00864648 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDD5AE2F18F7684A00864648;
+			remoteInfo = GoogleMapCodeSchool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDD5AE3018F7684A00864648 /* GoogleMapCodeSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMapCodeSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD5AE3318F7684A00864648 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EDD5AE3518F7684A00864648 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EDD5AE3718F7684A00864648 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EDD5AE3B18F7684A00864648 /* GoogleMapCodeSchool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleMapCodeSchool-Info.plist"; sourceTree = "<group>"; };
+		EDD5AE3D18F7684A00864648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDD5AE3F18F7684A00864648 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDD5AE4118F7684A00864648 /* GoogleMapCodeSchool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleMapCodeSchool-Prefix.pch"; sourceTree = "<group>"; };
+		EDD5AE4218F7684A00864648 /* codeSchoolAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codeSchoolAppDelegate.h; sourceTree = "<group>"; };
+		EDD5AE4318F7684A00864648 /* codeSchoolAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = codeSchoolAppDelegate.m; sourceTree = "<group>"; };
+		EDD5AE4518F7684A00864648 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EDD5AE4B18F7684A00864648 /* GoogleMapCodeSchoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMapCodeSchoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDD5AE4C18F7684A00864648 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EDD5AE5418F7684A00864648 /* GoogleMapCodeSchoolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleMapCodeSchoolTests-Info.plist"; sourceTree = "<group>"; };
+		EDD5AE5618F7684A00864648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EDD5AE5818F7684A00864648 /* GoogleMapCodeSchoolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMapCodeSchoolTests.m; sourceTree = "<group>"; };
+		EDD5AE6418F76C2B00864648 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		EDD5AE6618F76C6C00864648 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		EDD5AE6818F76DA500864648 /* LakeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LakeMapViewController.h; sourceTree = "<group>"; };
+		EDD5AE6918F76DA500864648 /* LakeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LakeMapViewController.m; sourceTree = "<group>"; };
+		EDD5AE6A18F76DA500864648 /* LakeMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LakeMapViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDD5AE2D18F7684A00864648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD5AE3618F7684A00864648 /* CoreGraphics.framework in Frameworks */,
+				EDD5AE3818F7684A00864648 /* UIKit.framework in Frameworks */,
+				EDD5AE6518F76C2B00864648 /* GoogleMaps.framework in Frameworks */,
+				EDD5AE3418F7684A00864648 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDD5AE4818F7684A00864648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD5AE4D18F7684A00864648 /* XCTest.framework in Frameworks */,
+				EDD5AE4F18F7684A00864648 /* UIKit.framework in Frameworks */,
+				EDD5AE4E18F7684A00864648 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDD5AE2718F7684A00864648 = {
+			isa = PBXGroup;
+			children = (
+				EDD5AE3918F7684A00864648 /* GoogleMapCodeSchool */,
+				EDD5AE5218F7684A00864648 /* GoogleMapCodeSchoolTests */,
+				EDD5AE3218F7684A00864648 /* Frameworks */,
+				EDD5AE3118F7684A00864648 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDD5AE3118F7684A00864648 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5AE3018F7684A00864648 /* GoogleMapCodeSchool.app */,
+				EDD5AE4B18F7684A00864648 /* GoogleMapCodeSchoolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDD5AE3218F7684A00864648 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5AE6618F76C6C00864648 /* GoogleMaps.bundle */,
+				EDD5AE6418F76C2B00864648 /* GoogleMaps.framework */,
+				EDD5AE3318F7684A00864648 /* Foundation.framework */,
+				EDD5AE3518F7684A00864648 /* CoreGraphics.framework */,
+				EDD5AE3718F7684A00864648 /* UIKit.framework */,
+				EDD5AE4C18F7684A00864648 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDD5AE3918F7684A00864648 /* GoogleMapCodeSchool */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5AE4218F7684A00864648 /* codeSchoolAppDelegate.h */,
+				EDD5AE4318F7684A00864648 /* codeSchoolAppDelegate.m */,
+				EDD5AE4518F7684A00864648 /* Images.xcassets */,
+				EDD5AE3A18F7684A00864648 /* Supporting Files */,
+				EDD5AE6818F76DA500864648 /* LakeMapViewController.h */,
+				EDD5AE6918F76DA500864648 /* LakeMapViewController.m */,
+				EDD5AE6A18F76DA500864648 /* LakeMapViewController.xib */,
+			);
+			path = GoogleMapCodeSchool;
+			sourceTree = "<group>";
+		};
+		EDD5AE3A18F7684A00864648 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5AE3B18F7684A00864648 /* GoogleMapCodeSchool-Info.plist */,
+				EDD5AE3C18F7684A00864648 /* InfoPlist.strings */,
+				EDD5AE3F18F7684A00864648 /* main.m */,
+				EDD5AE4118F7684A00864648 /* GoogleMapCodeSchool-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDD5AE5218F7684A00864648 /* GoogleMapCodeSchoolTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5AE5818F7684A00864648 /* GoogleMapCodeSchoolTests.m */,
+				EDD5AE5318F7684A00864648 /* Supporting Files */,
+			);
+			path = GoogleMapCodeSchoolTests;
+			sourceTree = "<group>";
+		};
+		EDD5AE5318F7684A00864648 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDD5AE5418F7684A00864648 /* GoogleMapCodeSchoolTests-Info.plist */,
+				EDD5AE5518F7684A00864648 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDD5AE2F18F7684A00864648 /* GoogleMapCodeSchool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD5AE5C18F7684A00864648 /* Build configuration list for PBXNativeTarget "GoogleMapCodeSchool" */;
+			buildPhases = (
+				EDD5AE2C18F7684A00864648 /* Sources */,
+				EDD5AE2D18F7684A00864648 /* Frameworks */,
+				EDD5AE2E18F7684A00864648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleMapCodeSchool;
+			productName = GoogleMapCodeSchool;
+			productReference = EDD5AE3018F7684A00864648 /* GoogleMapCodeSchool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDD5AE4A18F7684A00864648 /* GoogleMapCodeSchoolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDD5AE5F18F7684A00864648 /* Build configuration list for PBXNativeTarget "GoogleMapCodeSchoolTests" */;
+			buildPhases = (
+				EDD5AE4718F7684A00864648 /* Sources */,
+				EDD5AE4818F7684A00864648 /* Frameworks */,
+				EDD5AE4918F7684A00864648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDD5AE5118F7684A00864648 /* PBXTargetDependency */,
+			);
+			name = GoogleMapCodeSchoolTests;
+			productName = GoogleMapCodeSchoolTests;
+			productReference = EDD5AE4B18F7684A00864648 /* GoogleMapCodeSchoolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDD5AE2818F7684A00864648 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = codeSchool;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Luzemma Gonzalez";
+				TargetAttributes = {
+					EDD5AE4A18F7684A00864648 = {
+						TestTargetID = EDD5AE2F18F7684A00864648;
+					};
+				};
+			};
+			buildConfigurationList = EDD5AE2B18F7684A00864648 /* Build configuration list for PBXProject "GoogleMapCodeSchool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EDD5AE2718F7684A00864648;
+			productRefGroup = EDD5AE3118F7684A00864648 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDD5AE2F18F7684A00864648 /* GoogleMapCodeSchool */,
+				EDD5AE4A18F7684A00864648 /* GoogleMapCodeSchoolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDD5AE2E18F7684A00864648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD5AE6C18F76DA500864648 /* LakeMapViewController.xib in Resources */,
+				EDD5AE6718F76C6C00864648 /* GoogleMaps.bundle in Resources */,
+				EDD5AE3E18F7684A00864648 /* InfoPlist.strings in Resources */,
+				EDD5AE4618F7684A00864648 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDD5AE4918F7684A00864648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD5AE5718F7684A00864648 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDD5AE2C18F7684A00864648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD5AE6B18F76DA500864648 /* LakeMapViewController.m in Sources */,
+				EDD5AE4018F7684A00864648 /* main.m in Sources */,
+				EDD5AE4418F7684A00864648 /* codeSchoolAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDD5AE4718F7684A00864648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDD5AE5918F7684A00864648 /* GoogleMapCodeSchoolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDD5AE5118F7684A00864648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDD5AE2F18F7684A00864648 /* GoogleMapCodeSchool */;
+			targetProxy = EDD5AE5018F7684A00864648 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDD5AE3C18F7684A00864648 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDD5AE3D18F7684A00864648 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EDD5AE5518F7684A00864648 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDD5AE5618F7684A00864648 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDD5AE5A18F7684A00864648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDD5AE5B18F7684A00864648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDD5AE5D18F7684A00864648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/luz/Downloads/GoogleMaps-iOS-1.7.2",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleMapCodeSchool/GoogleMapCodeSchool-Prefix.pch";
+				INFOPLIST_FILE = "GoogleMapCodeSchool/GoogleMapCodeSchool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EDD5AE5E18F7684A00864648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/luz/Downloads/GoogleMaps-iOS-1.7.2",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleMapCodeSchool/GoogleMapCodeSchool-Prefix.pch";
+				INFOPLIST_FILE = "GoogleMapCodeSchool/GoogleMapCodeSchool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EDD5AE6018F7684A00864648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoogleMapCodeSchool.app/GoogleMapCodeSchool";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleMapCodeSchool/GoogleMapCodeSchool-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GoogleMapCodeSchoolTests/GoogleMapCodeSchoolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EDD5AE6118F7684A00864648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoogleMapCodeSchool.app/GoogleMapCodeSchool";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoogleMapCodeSchool/GoogleMapCodeSchool-Prefix.pch";
+				INFOPLIST_FILE = "GoogleMapCodeSchoolTests/GoogleMapCodeSchoolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDD5AE2B18F7684A00864648 /* Build configuration list for PBXProject "GoogleMapCodeSchool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDD5AE5A18F7684A00864648 /* Debug */,
+				EDD5AE5B18F7684A00864648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDD5AE5C18F7684A00864648 /* Build configuration list for PBXNativeTarget "GoogleMapCodeSchool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDD5AE5D18F7684A00864648 /* Debug */,
+				EDD5AE5E18F7684A00864648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDD5AE5F18F7684A00864648 /* Build configuration list for PBXNativeTarget "GoogleMapCodeSchoolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDD5AE6018F7684A00864648 /* Debug */,
+				EDD5AE6118F7684A00864648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDD5AE2818F7684A00864648 /* Project object */;
+}
