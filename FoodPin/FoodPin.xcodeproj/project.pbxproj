@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED3CC38C1BB61DAB00292F6A /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3CC38B1BB61DAB00292F6A /* RestaurantDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		ED3CC38E1BB6271400292F6A /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3CC38D1BB6271400292F6A /* Restaurant.swift */; settings = {ASSET_TAGS = (); }; };
 		EDD810371BB4BF0100818E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD810361BB4BF0100818E69 /* AppDelegate.swift */; };
 		EDD8103C1BB4BF0100818E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD8103A1BB4BF0100818E69 /* Main.storyboard */; };
 		EDD8103E1BB4BF0100818E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD8103D1BB4BF0100818E69 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED3CC38B1BB61DAB00292F6A /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		ED3CC38D1BB6271400292F6A /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		EDD810331BB4BF0100818E69 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD810361BB4BF0100818E69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDD8103B1BB4BF0100818E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				EDD810421BB4BF0100818E69 /* Info.plist */,
 				EDD810481BB4BFD100818E69 /* RestaurantTableViewController.swift */,
 				EDD8104A1BB4CC4100818E69 /* RestaurantTableViewCell.swift */,
+				ED3CC38B1BB61DAB00292F6A /* RestaurantDetailViewController.swift */,
+				ED3CC38D1BB6271400292F6A /* Restaurant.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3CC38E1BB6271400292F6A /* Restaurant.swift in Sources */,
 				EDD810491BB4BFD100818E69 /* RestaurantTableViewController.swift in Sources */,
 				EDD8104B1BB4CC4100818E69 /* RestaurantTableViewCell.swift in Sources */,
+				ED3CC38C1BB61DAB00292F6A /* RestaurantDetailViewController.swift in Sources */,
 				EDD810371BB4BF0100818E69 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +295,7 @@
 				EDD810471BB4BF0100818E69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
