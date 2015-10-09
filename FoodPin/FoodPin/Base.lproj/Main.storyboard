@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Food Pin-->
@@ -117,26 +118,29 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4gv-2j-NTx">
-                                                    <rect key="frame" x="25" y="6" width="80" height="21"/>
+                                                    <rect key="frame" x="25" y="6" width="567" height="21"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NE-db-4Ay">
-                                                            <rect key="frame" x="0.0" y="0.0" width="38" height="21"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="189" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sky-a5-CWF">
-                                                            <rect key="frame" x="38" y="0.0" width="42" height="21"/>
+                                                            <rect key="frame" x="189" y="0.0" width="378" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="5NE-db-4Ay" firstAttribute="width" secondItem="Sky-a5-CWF" secondAttribute="width" multiplier="0.5" id="wis-ax-otn"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4gv-2j-NTx" firstAttribute="leading" secondItem="zKi-96-swD" secondAttribute="leadingMargin" constant="17" id="O9z-Av-KTg"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="4gv-2j-NTx" secondAttribute="trailing" constant="487" id="Q2n-GB-3Tj"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4gv-2j-NTx" secondAttribute="trailing" id="Q2n-GB-3Tj"/>
                                                 <constraint firstItem="4gv-2j-NTx" firstAttribute="centerY" secondItem="zKi-96-swD" secondAttribute="centerY" id="pGv-nf-6uc"/>
                                             </constraints>
                                         </tableViewCellContentView>
