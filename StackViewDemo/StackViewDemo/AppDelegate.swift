@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  StackViewDemo
 //
-//  Created by Luzemma Gonzalez on 24/09/15.
-//  Copyright © 2015 Inspiring Learning. All rights reserved.
+//  Created by Luzemma Gonzalez on 08/03/16.
+//  Copyright © 2016 Descuentos Universitarios de México. All rights reserved.
 //
 
 import UIKit
