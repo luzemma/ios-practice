@@ -46,7 +46,7 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jI0-eo-JGc">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jI0-eo-JGc">
                                                             <rect key="frame" x="0.0" y="20" width="55" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -117,36 +117,38 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="35"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U4f-TO-I41">
-                                                    <rect key="frame" x="17" y="8" width="575" height="21"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBy-Lu-MbJ">
+                                                    <rect key="frame" x="8" y="7" width="584" height="21"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRy-4c-6EH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="192" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwU-Lz-aaP">
+                                                            <rect key="frame" x="0.0" y="0.0" width="195" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwM-Y5-wCD">
-                                                            <rect key="frame" x="192" y="0.0" width="383" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fie-vM-v4p">
+                                                            <rect key="frame" x="195" y="0.0" width="389" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="iRy-4c-6EH" firstAttribute="width" secondItem="AwM-Y5-wCD" secondAttribute="width" multiplier="0.5" id="0nb-zL-xvZ"/>
+                                                        <constraint firstItem="hwU-Lz-aaP" firstAttribute="width" secondItem="Fie-vM-v4p" secondAttribute="width" multiplier="0.5" id="FCZ-bw-mfg"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="U4f-TO-I41" firstAttribute="centerY" secondItem="qHU-q2-fYd" secondAttribute="centerY" id="TSO-Ga-Ict"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="U4f-TO-I41" secondAttribute="trailing" id="ZkT-Y7-2h8"/>
-                                                <constraint firstItem="U4f-TO-I41" firstAttribute="leading" secondItem="qHU-q2-fYd" secondAttribute="leadingMargin" constant="9" id="qbi-oo-3dD"/>
+                                                <constraint firstItem="dBy-Lu-MbJ" firstAttribute="top" secondItem="qHU-q2-fYd" secondAttribute="topMargin" constant="-1" id="0ou-Rt-wRy"/>
+                                                <constraint firstItem="dBy-Lu-MbJ" firstAttribute="centerY" secondItem="qHU-q2-fYd" secondAttribute="centerY" id="I8h-sj-boh"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="dBy-Lu-MbJ" secondAttribute="leading" id="ecC-RH-WT7"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dBy-Lu-MbJ" secondAttribute="bottom" constant="-1" id="fxr-UU-Cz7"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dBy-Lu-MbJ" secondAttribute="trailing" id="mwU-gQ-aQM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="fieldLabel" destination="iRy-4c-6EH" id="P3r-od-HuD"/>
-                                            <outlet property="valueLabel" destination="AwM-Y5-wCD" id="4p1-r5-7qR"/>
+                                            <outlet property="fieldLabel" destination="hwU-Lz-aaP" id="A0N-JI-hqh"/>
+                                            <outlet property="valueLabel" destination="Fie-vM-v4p" id="9iQ-Fz-f4Y"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
