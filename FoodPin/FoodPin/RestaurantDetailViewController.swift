@@ -12,6 +12,7 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
     
     @IBOutlet var restaurantImageView:UIImageView!
     @IBOutlet var tableView:UITableView!
+    @IBOutlet var ratingButton:UIButton!
 
     var restaurant:Restaurant!
     
@@ -78,6 +79,23 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         }
         cell.backgroundColor = UIColor.clearColor()
         return cell
+    }
+    
+    @IBAction func close(segue:UIStoryboardSegue){
+        if let reviewViewController = segue.sourceViewController as? ReviewViewController{
+            if let rating = reviewViewController.rating{
+                ratingButton.setImage(UIImage(named: rating), forState: .Normal)
+                self.restaurant.rating = rating
+            }
+        }
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "showMap"){
+            let destinationController = segue.destinationViewController as! MapViewController
+            destinationController.restaurant = restaurant;
+        }
     }
 
 }
