@@ -478,6 +478,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="71"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="twm-Wn-gUr">
+                                                    <rect key="frame" x="13" y="33" width="577" height="30"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ai2-NS-af7">
                                                     <rect key="frame" x="13" y="8" width="144" height="21"/>
                                                     <constraints>
@@ -487,12 +493,6 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Restaurant Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="twm-Wn-gUr">
-                                                    <rect key="frame" x="13" y="33" width="577" height="30"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="twm-Wn-gUr" firstAttribute="bottom" secondItem="05H-ge-jhK" secondAttribute="bottomMargin" id="60d-rH-XJv"/>
@@ -529,6 +529,9 @@
                                                     <state key="normal" title="YES">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="toggleBeenHereButton:" destination="FxW-O8-XOo" eventType="touchUpInside" id="lnZ-QR-XX9"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydQ-VT-Oxe">
                                                     <rect key="frame" x="70" y="37" width="50" height="30"/>
@@ -539,6 +542,9 @@
                                                     <state key="normal" title="NO">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="toggleBeenHereButton:" destination="FxW-O8-XOo" eventType="touchUpInside" id="L19-Vf-ycA"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -566,9 +572,19 @@
                                 <segue destination="B8Z-Ma-KGf" kind="unwind" unwindAction="unwindToHomeScreen:" id="dzM-oV-9gu"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="1HU-mH-Ckm">
+                            <connections>
+                                <action selector="saveRestaurant:" destination="FxW-O8-XOo" id="iK7-DB-cK5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="8vK-sR-Ben" id="paA-ih-Vlh"/>
+                        <outlet property="locationTextField" destination="twm-Wn-gUr" id="7Lv-Dl-qA9"/>
+                        <outlet property="nameTextField" destination="0iz-jV-SPz" id="KJH-JQ-O0C"/>
+                        <outlet property="noButton" destination="ydQ-VT-Oxe" id="kXV-wH-boy"/>
+                        <outlet property="typeTextField" destination="R03-Qz-yXs" id="Str-O1-p4N"/>
+                        <outlet property="yesButton" destination="36N-zG-ewx" id="Jgc-Or-pt8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ray-43-GvN" userLabel="First Responder" sceneMemberID="firstResponder"/>

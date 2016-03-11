@@ -11,6 +11,13 @@ import UIKit
 class AddRestaurantViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet var imageView:UIImageView!
+    @IBOutlet var nameTextField:UITextField!
+    @IBOutlet var typeTextField:UITextField!
+    @IBOutlet var locationTextField:UITextField!
+    @IBOutlet var yesButton:UIButton!
+    @IBOutlet var noButton:UIButton!
+    
+    var isVisited:Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,9 +52,53 @@ class AddRestaurantViewController: UITableViewController, UIImagePickerControlle
         imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         imageView.contentMode = UIViewContentMode.ScaleAspectFill
         imageView.clipsToBounds = true
+        
+        let leadingConstraint = NSLayoutConstraint(item: imageView, attribute: .Leading, relatedBy: .Equal, toItem: imageView.superview, attribute: .Leading, multiplier: 1, constant: 0)
+        leadingConstraint.active = true
+        
+        let trailingConstraint = NSLayoutConstraint(item: imageView, attribute: .Trailing, relatedBy: .Equal, toItem: imageView.superview, attribute: .Trailing, multiplier: 1, constant: 0)
+        trailingConstraint.active = true
+        
+        let topConstraint = NSLayoutConstraint(item: imageView, attribute: .Top, relatedBy: .Equal, toItem: imageView.superview, attribute: .Top, multiplier: 1, constant: 0)
+        topConstraint.active = true
+        
+        let bottomConstraint = NSLayoutConstraint(item: imageView, attribute: .Bottom, relatedBy: .Equal, toItem: imageView.superview, attribute: .Bottom, multiplier: 1, constant: 0)
+        bottomConstraint.active = true
+        
         dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func saveRestaurant(sender: UIBarButtonItem) {
+        let name = nameTextField.text
+        let type = typeTextField.text
+        let location = locationTextField.text
+        
+        if name == "" && type == "" && location == ""{
+            let alertController = UIAlertController(title: "Opss", message: "We can't proceed because one of the fields is blank. Please note that all fields are required", preferredStyle: .Alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            self.presentViewController(alertController, animated: true, completion: nil)
+            return
+        }
+        
+        print("Name: \(name)")
+        print("Type: \(type)")
+        print("Location: \(location)")
+        print("Have you been here: \(isVisited)")
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func toggleBeenHereButton(sender:UIButton){
+        if sender == yesButton{
+            self.isVisited = true
+            yesButton.backgroundColor = UIColor.redColor()
+            noButton.backgroundColor = UIColor.lightGrayColor()
+        }else if sender == noButton{
+            self.isVisited = false
+            yesButton.backgroundColor = UIColor.lightGrayColor()
+            noButton.backgroundColor = UIColor.redColor()
+        }
+    }
     
 
 
