@@ -18,13 +18,17 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        restaurantImageView.image = UIImage(named: restaurant.image)
+        restaurantImageView.image = UIImage(data: restaurant.image!)
         tableView.backgroundColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.2)
         tableView.tableFooterView = UIView(frame: CGRectZero)
         tableView.separatorColor = UIColor(red: 240.0/255.0, green:240.0/255.0 , blue: 240.0/255.0, alpha: 0.8)
         self.title = restaurant.name
         tableView.estimatedRowHeight = 36.0
         tableView.rowHeight = UITableViewAutomaticDimension
+        
+        if let rating = restaurant.rating where rating != ""{
+            ratingButton.setImage(UIImage(named: rating), forState: .Normal)
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -69,10 +73,12 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
             cell.valueLabel.text = restaurant.location
         case 3:
             cell.fieldLabel.text = "Phone"
-            cell.valueLabel.text = restaurant.phone
+            cell.valueLabel.text = restaurant.phoneNumber
         case 4:
             cell.fieldLabel.text = "Been here"
-            cell.valueLabel.text = (restaurant.isVisited) ? "Yes, I've been here before": "No"
+            if let isVisited = restaurant.isVisited?.boolValue{
+                cell.valueLabel.text = isVisited ? "Yes, I've been here before": "No"
+            }
         default:
             cell.fieldLabel.text = ""
             cell.valueLabel.text = ""
@@ -84,8 +90,15 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
     @IBAction func close(segue:UIStoryboardSegue){
         if let reviewViewController = segue.sourceViewController as? ReviewViewController{
             if let rating = reviewViewController.rating{
-                ratingButton.setImage(UIImage(named: rating), forState: .Normal)
                 self.restaurant.rating = rating
+                ratingButton.setImage(UIImage(named: rating), forState: .Normal)
+                if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext{
+                    do {
+                        try managedObjectContext.save()
+                    }catch{
+                        print(error)
+                    }
+                }
             }
         }
         

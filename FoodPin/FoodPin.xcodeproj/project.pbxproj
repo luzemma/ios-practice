@@ -13,6 +13,8 @@
 		ED76B5D81C92275A00ADFCAF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED76B5D71C92275A00ADFCAF /* MapKit.framework */; };
 		ED76B5DA1C9236BC00ADFCAF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED76B5D91C9236BC00ADFCAF /* MapViewController.swift */; };
 		ED76B5DC1C9257AA00ADFCAF /* AddRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED76B5DB1C9257AA00ADFCAF /* AddRestaurantViewController.swift */; };
+		ED8555E01C978FDC0094081D /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8555DF1C978FDC0094081D /* WalkthroughContentViewController.swift */; };
+		ED8555E21C9793340094081D /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8555E11C9793340094081D /* WalkthroughPageViewController.swift */; };
 		EDD810371BB4BF0100818E69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD810361BB4BF0100818E69 /* AppDelegate.swift */; };
 		EDD8103C1BB4BF0100818E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD8103A1BB4BF0100818E69 /* Main.storyboard */; };
 		EDD8103E1BB4BF0100818E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD8103D1BB4BF0100818E69 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		ED76B5D71C92275A00ADFCAF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		ED76B5D91C9236BC00ADFCAF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		ED76B5DB1C9257AA00ADFCAF /* AddRestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRestaurantViewController.swift; sourceTree = "<group>"; };
+		ED8555DF1C978FDC0094081D /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		ED8555E11C9793340094081D /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		EDD810331BB4BF0100818E69 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD810361BB4BF0100818E69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDD8103B1BB4BF0100818E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 				ED76B5D91C9236BC00ADFCAF /* MapViewController.swift */,
 				ED76B5DB1C9257AA00ADFCAF /* AddRestaurantViewController.swift */,
 				ED09A8D51C93845000425A9B /* FoodPin.xcdatamodeld */,
+				ED8555DF1C978FDC0094081D /* WalkthroughContentViewController.swift */,
+				ED8555E11C9793340094081D /* WalkthroughPageViewController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 				EDE691AF1C91FDA100B824CE /* ReviewViewController.swift in Sources */,
 				EDD8104B1BB4CC4100818E69 /* RestaurantTableViewCell.swift in Sources */,
 				EDF6AC9B1BC745B600205747 /* RestaurantDetailTableViewCell.swift in Sources */,
+				ED8555E01C978FDC0094081D /* WalkthroughContentViewController.swift in Sources */,
+				ED8555E21C9793340094081D /* WalkthroughPageViewController.swift in Sources */,
 				ED09A8D71C93845000425A9B /* FoodPin.xcdatamodeld in Sources */,
 				ED76B5DC1C9257AA00ADFCAF /* AddRestaurantViewController.swift in Sources */,
 				ED3CC38C1BB61DAB00292F6A /* RestaurantDetailViewController.swift in Sources */,
